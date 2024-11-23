@@ -2,8 +2,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem;  
 }
 
 @keyframes logo-spin {
@@ -22,15 +21,6 @@
 }
 
 
-.parallax-container {
-  position: relative;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  color: white;
-  text-align: center;
-}
 
 /* Custom Stylesheet */
 /**
@@ -243,9 +233,11 @@ nav .brand-logo {
   color: #444;
 }
 
+
 p {
   line-height: 2rem;
 }
+
 
 .sidenav-trigger {
   color: #26a69a;
@@ -306,4 +298,5 @@ footer.page-footer {
   margin: 0;
   background-color: blue;
 }
+
 

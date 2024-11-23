@@ -1,6 +1,8 @@
 (function($){
   $(function(){
 
+    console.log("teste");
+
     $('.sidenav').sidenav();
     $('.parallax').parallax();
 
