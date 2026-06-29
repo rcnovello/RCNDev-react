@@ -1,13 +1,14 @@
 # Stage 1: Build the React application
-FROM node:20 AS builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
 # Copy package.json and package-lock.json first to leverage Docker cache
 # This means npm install will not run again if package.json hasn't changed
-COPY package.json ./package-lock.json ./
+COPY package.json package-lock.json ./
 
-RUN npm ci
+# Clean install with specific platform to avoid architecture issues
+RUN npm ci --platform=linux --arch=x64
 
 # Copy the rest of the application code
 COPY . .
